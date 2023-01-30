@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/nav.css">
+    <link rel="stylesheet" href="Styles/contact.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+    <title>Contacto - Bareria Alura</title>
+</head>
+<body>
+    <nav>
+        <section id="logo">
+            <img src="https://i.pinimg.com/564x/2c/d6/b1/2cd6b1c64c5cf253ef7ddf6459c4761c.jpg">
+        </section>
+        <section id="links">
+            <ul id="complete">
+                <li class="completeLink"><a href="index.html">Home</a></li>
+                <li class="completeLink"><a href="productos.html">Products</a></li>
+                <li class="completeLink"><a href="contact.html">Contact</a></li>
+            </ul>
+        </section>
+
+        <section id="phone">
+            <span id="line">
+                <ul id="menuPhone">
+                    <li class="phoneLink"><a href="index.html">Home</a></li>
+                    <li class="phoneLink"><a href="productos.html">Products</a></li>
+                    <li class="phoneLink"><a href="contact.html">Contact</a></li>
+                </ul>
+            </span>
+        </section>
+    </nav>
+
+    <div id="body">
+        <form id="formInfo" autocomplete="off">
+            <section class="infColumn">
+                <input type="text" name="name" class="inpArea" required>
+                <label for="name" class="infTxt">Nombre(es) y Apellidos</label>
+            </section>
+
+            <section class="infColumn">
+                <input type="email" name="email" class="inpArea" required>
+                <label for="email" class="infTxt">Correo Electronico</label>
+            </section>
+            
+            <section class="infColumn">
+                <input type="text" name="phone" class="inpArea" required>
+                <label for="phone" class="infTxt">Numero de Telefono</label>
+            </section>
+            
+            <section class="infColumn">
+                <textarea name="sms" class="inpArea" required></textarea>
+                <label for="sms" class="infTxt">Mensaje</label>
+            </section>
+
+            <section class="infRow">
+                <label for="time">Horario Preferido: </label>
+                <select name="time" id="time" required>
+                    <option>Selecciona Horario</option>
+                    <option value="morning">Por la Mañana</option>
+                    <option value="after">Por la Tarde</option>
+                    <option value="night">Por la Noche</option>
+                </select>
+            </section>
+
+            <article class="infColumn">
+                <h1>¿Como le gustaria ser contactado?</h1>
+                <section class="infRow">
+                    <aside>
+                        <label for="email" class="contact" required>Electronico</label>
+                        <input type="radio" id="contactChoice1" name="contact" value="email"/>
+                    </aside>
+
+                    <aside>
+                        <label for="phone" class="contact" required>Telefono</label>
+                        <input type="radio" id="contactChoice2" name="contact" value="phone"/>
+                    </aside>
+                    
+                    <aside>
+                        <label for="whatsapp" class="contact" required>Whatsapp</label>
+                        <input type="radio" id="contactChoice3" name="contact" value="whatsapp"/>
+                    </aside>
+                </section>
+            </article>
+            
+            <article class="infRow">
+                <input type="checkbox" name="check" id="check">
+                <label for="check" id="checkT">
+                    <span id="checkG"></span>
+                    ¿Le gustaria recibir informacion por correo electronico?
+                    <p id="txtPhone"><strong>De Click aquí</strong></p>
+                </label>
+            </article>
+
+            <input type="button" value="Enviar Formulario" id="send">
+        </form>
+        <article id="infHrs">
+            <section id="alertInf">
+                <img src="https://i.pinimg.com/236x/27/40/24/2740240857a745fd8fbb0a6e8e2c34a4.jpg">
+            </section>
+            <table>
+                <thead>
+                    <th>Dia</td>
+                    <th>Horarios</td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>08:00 ~ 20:00 Hrs</td>
+                    </tr>
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>08:00 ~ 20:00 Hrs</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08:00 ~ 20:00 Hrs</td>
+                    </tr>    
+                </tbody>
+            </table>
+        </article>
+    </div>
+
+    <footer id="footerPage">
+        <h1>Perfiles</h1>
+        <div id="zelda">
+            <a class="moveTo" href="">
+                <article class="contacts">
+                    <img src="https://i.pinimg.com/564x/21/d6/7f/21d67f1d6b3be5bb2e39395311c77fc6.jpg">
+                    <p>Instagram</p>
+                </article>
+            </a>
+
+            <a class="moveTo" href="">
+                <article class="contacts">
+                    <img src="https://i.pinimg.com/564x/b4/70/e0/b470e0b89c40f41febff322b8728dd16.jpg">
+                    <p>Facebook</p>
+                </article>
+            </a>
+
+            <a class="moveTo" href="">
+                <article class="contacts">
+                    <img src="https://i.pinimg.com/236x/4c/61/3c/4c613c77cc9566c98b7cef724fa8caf4.jpg">
+                    <p>Twitter</p>
+                </article>
+            </a>
+
+            <a class="moveTo" href="">
+                <article class="contacts">
+                    <img src="https://i.pinimg.com/564x/71/69/31/7169314597edf490c5f417bb93881d84.jpg">
+                    <p>Whatsapp</p>
+                </article>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #865a2f;
+}
+
+#body {
+    background-color: #00000080;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    padding: 3rem;
+    gap: 2rem;
+}
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        border-radius: 0 0 20px 20px;
+        background-image: url(https://i.pinimg.com/564x/5b/c2/a7/5bc2a732f26274d291d23159e57629d8.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 0 0 35px 10px #000000;
+        transition: all 1s ease;
+        filter: grayscale(80%);
+    }
+    
+        .card > header {
+            padding: 1rem;
+            font-size: 25px;
+        }
+
+        .ofImg {
+            padding: 0.5rem;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+            .ofImg > img {
+                width: 90%;
+                border-radius: 1rem;
+            }
+
+        .foodCard {
+            padding: 0.5rem;
+            font-size: 19px;
+            border-radius: 0 0 20px 20px;
+        }
+
+            .foodCard > span {
+                font-size: 30px;
+            }
+
+    .card:hover {
+        box-shadow: inset 0 0 90px #efb710, 0 0 10px #fce903;
+        translate: 0 -20px;
+        filter: grayscale(0%);
+    }
+
+@media screen and (max-width: 600px) {
+#body {
+    padding: 1rem 0;
+}
+    
+    .card {
+        box-shadow: inset 0 0 90px #efb710, 0 0 10px #fce903;
+        filter: grayscale(0%);
+        color: #ffffff;
+        width: 200px;
+    }
+    
+        .card:hover {
+            box-shadow: inset 0 0 90px #efb710, 0 0 10px #fce903;
+            translate: 0;
+        }
+}
