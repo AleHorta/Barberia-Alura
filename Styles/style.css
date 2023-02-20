@@ -35,7 +35,7 @@ header {
         }
 
 #body {
-    background-color: 	#865a2f;
+    background-color: #865a2f;
     color: #ffffff;
 }
 
@@ -86,7 +86,7 @@ header {
 
     #subTitle {
         text-align: center;
-        background-color: #000000;
+        background: radial-gradient(ellipse, #9a8478, #1e130c);
         font-size: 40px;
         text-shadow: 0 2px 12px #efb810;
     }
